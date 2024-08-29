@@ -1,11 +1,12 @@
 import GithubIcon from "./../public/assets/icons/github.svg";
 import LinkedInIcon from "./../public/assets/icons/linkedin.svg";
-import FrontendIcon from "./../public/assets/icons/frontend.svg";
-import LeaderShipIcon from "./../public/assets/icons/leadership.svg";
-import ProblemSolvingIcon from "./../public/assets/icons/problem-solving.svg";
-import FreelancerIcon from "./../public/assets/icons/freelance.svg";
-import BackendIcon from "./../public/assets/icons/backend.svg";
-import FullStackIcon from "./../public/assets/icons/full-stack.svg";
+import ReactIcon from "../public/assets/icons/yapayzeka.svg";
+import ReactNativeIcon from "./../public/assets/icons/reactnative.svg";
+import NodeJsIcon from "./../public/assets/icons/nodejs.svg";
+import JavaScriptIcon from "./../public/assets/icons/javascript.svg";
+import NetCoreIcon from "./../public/assets/icons/nextjs.svg";
+import PythonIcon from "./../public/assets/icons/django.svg";
+
 
 const navLinks = [
   {
@@ -28,20 +29,28 @@ const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Developer",
-    icon: <FullStackIcon />,
+    title: "React Developer",
+    icon: <ReactIcon />,
   },
   {
-    title: "Frontend Developer",
-    icon: <FrontendIcon />,
+    title: "AI Developer",
+    icon: <ReactNativeIcon />,
   },
   {
-    title: "Backend Developer",
-    icon: <BackendIcon />,
+    title: "NodeJs Developer",
+    icon: <NodeJsIcon/>,
   },
   {
-    title: "Problem Solving",
-    icon: <ProblemSolvingIcon />,
+    title: "Javascript Developer",
+    icon: <JavaScriptIcon/>,
+  },
+  {
+    title: "ASP.NET Core Developer",
+    icon: <NetCoreIcon/>
+  },
+  {
+    title: "Python Developer",
+    icon: <PythonIcon/>,
   },
 ];
 
@@ -50,112 +59,163 @@ const technologies = {
     {
       name: "HTML5",
       icon: "/assets/tech/html5.svg",
-      link: "",
     },
     {
       name: "CSS3",
       icon: "/assets/tech/css3.svg",
-      link: "",
     },
     {
       name: "JavaScript",
       icon: "/assets/tech/javascript.svg",
-      link: "",
     },
     {
       name: "TypeScript",
       icon: "/assets/tech/typescript.svg",
-      link: "",
     },
     {
       name: "Python",
       icon: "/assets/tech/python.svg",
-      link: "",
+    },
+    {
+      name: "C#",
+      icon: "/assets/tech/web3.png",
     },
   ],
   frameworks: [
     {
+      name: "Django",
+      icon: "/assets/tech/dj.png",
+    },
+    {
+      name: "Flask",
+      icon: "/assets/tech/flask.png",
+    },
+    {
       name: "Next.js",
       icon: "/assets/tech/nextjs.svg",
-      link: "",
     },
     {
       name: "TailwindCSS",
       icon: "/assets/tech/tailwindcss.svg",
-      link: "",
     },
     {
       name: "Express.js",
       icon: "/assets/tech/expressjs.png",
-      link: "",
+    },
+    {
+      name: "ASP.NET Core",
+      icon: "/assets/tech/mvc.png",
     },
   ],
   libraries: [
     {
       name: "React",
       icon: "/assets/tech/react.svg",
-      link: "",
+    },
+    {
+      name: "React Native",
+      icon: "/assets/tech/native.png",
     },
     {
       name: "Three.js",
       icon: "/assets/tech/threejs.svg",
-      link: "",
     },
-  
+    {
+      name: "TensorFlow",
+      icon: "/assets/tech/tensor.png",
+    },
+    {
+      name: "PyTorch",
+      icon: "/assets/tech/pytorch.png",
+    },
+    {
+      name: "Keras",
+      icon: "/assets/tech/keras.png",
+    },
+    {
+      name: "REST API",
+      icon: "/assets/tech/rest.jpeg",
+    },
   ],
   tools: [
     {
       name: "Git",
       icon: "/assets/tech/git.svg",
-      link: "https://git-scm.com/",
     },
     {
       name: "Github",
       icon: "/assets/icons/github.svg",
-      link: "https://github.com/",
     },
     {
       name: "Postman",
       icon: "/assets/tech/postman.svg",
-      link: "https://www.postman.com/",
     },
-   
     {
       name: "Docker",
       icon: "/assets/tech/docker.svg",
-      link: "https://www.docker.com/",
+    },
+    {
+      name: "Jira",
+      icon: "/assets/tech/jira.png",
     },
   ],
   environments: [
     {
       name: "Node.js",
       icon: "/assets/tech/nodejs.svg",
-      link: "https://nodejs.org/en",
     },
   ],
   databases: [
-   
-   
     {
-      name: "MySQL",
-      icon: "/assets/tech/my-sql.png",
-      link: "https://www.mysql.com/",
+      name: "PostgreSQL",
+      icon: "/assets/tech/postgre.png",
+    },
+    {
+      name: "Microsoft SQL",
+      icon: "/assets/tech/mssql.jpeg",
     },
   ],
 };
 
+
 const experiences = [
   {
-    title: "Full Stack Developer",
-    company_name: "Tech Lead at GDSC MVJCE",
-    icon: "/assets/company/gdsc-logo.svg",
+    title: "Yazılım Geliştirme Uzman Yardımcısı",
+    company_name: "Turkuvaz Medya Grubu",
+    company_website: "https://www.turkuvazmedyagrubu.com.tr/",
+    icon: "/assets/company/tmg.jpeg",
     iconBg: "#E6DEDD",
-    date: "July 2023 - Present",
+    date: "Ağustos 2023 - Devam Ediyor",
     points: [
-      "Currently serving as the Tech Lead of GDSC, responsible for guiding technical aspects, fostering collaboration, and contributing to strategic decisions.",
-      "Led induction programs, ensured new member alignment with GDSC's mission, and provided technical mentorship.",
-      "Developed GDSC MVJCE website, enhancing the organization's online visibility.",
-      "Spearheaded promotional campaigns, actively engaged with the GDSC community, and played a key role in planning and executing events.",
+      "Şirket bünyesinde bulunan markaların (ATV, Aspor, Ahaber, Takvim, Fotomaç, Sabah vs.) web sitelerini geliştirme ve optimize etme",
+      "Turkuvaz Akademi uygulamasının tasarlanması ve geliştirilmesi (CRUD işlemleri,döküman ve video yükleme, sınav oluşturma ve sınava girme işlemlerinde etkin rol aldım)",
+      "Turkuvapp mobil ve web uygulamasının geliştirilmesi ve kullanıcı bazlı dönüşlerde iyileştirilme"
+    ],
+  },
+  {
+    title: "Yazılım Geliştirme Mühendisi",
+    company_name: "Interdata (Pavo Group)",
+    company_website: "https://www.interdata.com.tr/",
+    icon: "/assets/company/ınterdata.png",
+    iconBg: "#E6DEDD",
+    date: "Ağustos 2022 - Nisan 2023",
+    points: [
+        "Araç Takip Sistemi projesinde gerçek zamanlı konum takibi, sensör veri işleme ve raporlama,CRUD işlemleri aşamalarında etkin rol aldım.", 
+        "Şirket bünyesinde bulunan tüm firmalarda kullanılmak üzere proje test ve takip web uygulamasının CRUD işlemleri,raporlama ve izleme aşamalarını gerçekleştirdim",
+        "Kapsamlı bir test otomasyon projesi geliştirerek, hata tespit süresini %40 azalttım ve yazılım kalitesini artırdım"
+    ],
+  },
+  {
+    title: "Mühendis Subay",
+    company_name: "Harita Genel Müdürlüğü",
+    company_website: "https://www.harita.gov.tr/",
+    icon: "/assets/company/hgm.png",
+    iconBg: "#E6DEDD",
+    date: "Eylül 2021 - Temmuz 2022",
+    points: [
+      "Tematik haritalar ve yüzey analizleri oluşturma. (ArcGIS, QGIS)",
+      "Uydu ve İHA görüntüleri işleme, harita katmanları oluşturma.",
+      "İHA ve Uydu görüntülerini kullanarak Web ve mobil için  Cesşum  ile 3D Harita Uygulaması geliştirme",
     ],
   },
 ];
@@ -189,65 +249,242 @@ const testimonials = [
 
 const projects = [
   {
-    name: "FigPro",
+    name: "ChatBot Pro",
     description:
-      "FigPro is a web-based collaborative design tool similar to Figma, built using Next.js, TypeScript, Tailwind CSS, and LiveBlocks API, Fabric.js. With FigPro, teams can seamlessly collaborate on designing interfaces in real-time with a plethora of features.",
+      "Google Gemini Pro modeli entegre edilmiş gradio arayüzü ile sohbet edebileceğiniz sorular sorabileceğiniz chatbot uygulamamı hugging face space üzerinden yayınlayarak kullanıcılarla paylaşılması sağlanmıştır.",
     tags: [
       {
-        name: "typescript",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "gradio",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "gemini",
         color: "pink-text-gradient",
       },
+    ],
+    image: "/assets/projects/cahtbot.png",
+    deployed_link: "https://huggingface.co/spaces/yucelgumus61/ChatBotPro",
+    source_code_link: "",
+  },
+
+  {
+    name: "MultiSelect Component",
+    description:
+      "Rick and Morty API'sini kullanarak veri çektiğim ve bu veriyi bir multiselect (çoklu seçim) bileşeninde listelediğim bir React projesi geliştirdim. Bu bileşen, kullanıcıların listedeki öğeleri seçmesine ve seçimlerini geri almasına olanak tanıyor. Tüm bu işlevsellikler, herhangi bir harici kütüphane kullanılmadan tamamen kendi implementasyonumla gerçekleştirildi.",
+    tags: [
       {
-        name: "fabricjs",
-        color: "orange-text-gradient",
+        name: "reactjs",
+        color: "blue-text-gradient",
       },
       {
-        name: "liveblocks",
-        color: "yellow-text-gradient",
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api",
+        color: "pink-text-gradient",
       },
     ],
-    image: "/assets/projects/fig-pro.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/FigPro",
-    deployed_link: "https://fig-pro-github.vercel.app",
+    image: "/assets/projects/rickandmorty.png",
+    source_code_link: "",
+    deployed_link: "https://yucel-gumus.github.io/RickAndMorty_MultiSelect/",
   },
- 
+  {
+    name: "Cesium ile Drone Simülasyonu",
+    description:
+      "Cesium kütüphanesi kullanarak 3D harita üzerinde 3D drone modelini oluşturma ve bu drone için ilk önce belirli bir irtifaya çıkarma daha sonra rota oluşturma ve bu rota sonucunda başlangıç irtifasına geri gelerek indirme işlemleri ile yere inişinin sağlanması üzerine simülasyon oluşturuldu",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cesium",
+        color: "green-text-gradient",
+      },
+      {
+        name: "glb model",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/cesiumdrone.png",
+    source_code_link: "",
+    deployed_link: "https://yucel-gumus.github.io/cesium-drone.github.io/",
+  },
+  {
+    name: "Gemini Chat ve Resim Analizi",
+    description:
+      "Gemini apisi kullanarak sohbet edebileceğiniz veya resim yükleyerek resim üzerinden analizler ,sohbetler edebileceğiniz bir yapay zeka entegrasyonu projesidir.Projenim Node.js tarafı vercel üzerinden yayımlanmıştır. React tarafı ise netlify üzerinden yayımlanmıştır.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "pink-text-gradient",
+      },
+      { name: "Netlify", color: "blue-text-gradiet" },
+    ],
+    image: "/assets/projects/gemini.png",
+    source_code_link: "",
+    deployed_link: "https://gemini-chat-image.netlify.app/",
+  },
+  {
+    name: "Gemini-1.5 Flash ile Resim Analizi",
+    description:
+      "Gemini-1.5 Flash  kullanarak resim yükleyerek resim üzerinden analizler ,sohbetler edebileceğiniz bir yapay zeka entegrasyonu projesidir.Projenin backend tarafı flask ile yazılmış frontend tarafında javascript kullanılmıştır ve proje pythonanywhere üzerinden canlıya alınmıştır",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pythonanywhere",
+        color: "pink-text-gradient",
+      },
+      { name: "python", color: "blue-text-gradiet" },
+    ],
+    image: "/assets/projects/Flask.png",
+    source_code_link: "",
+    deployed_link: "https://yucelgumus.pythonanywhere.com/",
+  },
+  {
+    name: "Python Görüntü Sınıflandırma",
+    description:
+      " Python ile at , kuş , kedi ve köpek resimlerinden oluşan dataseti  eğiterek kullanıcının seçtiği  görüntünün ne olduğunu  ilgili dataset çerçevesinde tahmin ederek oranıyla beraber listeyen uygula. Bu uygulamayı gradio ile bir arayüze taşıma ve hugging face space üzerinde yayınlayarak açık kaynak olarak paylaşımı yapılmıştır.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gradio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pytorch",
+        color: "pink-text-gradient",
+      },
+      { name: "embedding", color: "blue-text-gradiet" },
+    ],
+    image: "/assets/projects/imageclassifier.png",
+    source_code_link: "",
+    deployed_link:
+      "https://huggingface.co/spaces/yucelgumus61/image_classifier",
+  },
+  {
+    name: "Benzer filmleri bulma NLTK Projesi",
+    description:
+      "Doğal Dil İşleme ve cosinus benzerlik matrisi kullanarak 5000 film bilgilerinin bulunduğu veri üzerinden cosine_similarity ile veriseti üzerindeki metin benzerliklerinden faydalanılarak  girilen filme göre en yakın benzerlikte ki filmlerin 5 tanesini bulan bir uygulama geliştirdim.Bu uygulamaya arayüz olarak gradio entegra ettim ve hugging face space üzerinden kullanıma açtım.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gradio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NLTK",
+        color: "pink-text-gradient",
+      },
+      { name: "cosine_similarity", color: "blue-text-gradiet" },
+    ],
+    image: "/assets/projects/nltk.png",
+    source_code_link: "",
+    deployed_link: "https://huggingface.co/spaces/yucelgumus61/NTLK",
+  },
+  {
+    name: "Resim Derinlik Analizi",
+    description:
+      "Yüklenen resmin zoe depth modeli kullanılarak derinlik analizini yapan gradio uygulaması yapıldı.Yapılan bu uygulama hugging face space üzerinden paylaşıma sunuldu. ",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gradio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ZoeDepth",
+        color: "pink-text-gradient",
+      },
+      { name: "CV2", color: "blue-text-gradiet" },
+    ],
+    image: "/assets/projects/depth.png",
+    source_code_link: "",
+    deployed_link:
+      "https://huggingface.co/spaces/yucelgumus61/Zoe_DeptAnalyzer",
+  },
+
+  {
+    name: "Türkiye Haritası",
+    description:
+      "Bu projenin amacı Türkiye sınırları ve il sınırlarına dayalı olarak oluşturulan harita da alana tıklayınca hangi il olduğu ve ilin alanını belirtmektir.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "json",
+        color: "green-text-gradient",
+      },
+      {
+        name: "leaflet",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/turkeymap.png",
+    deployed_link: "https://yucel-gumus.github.io/turkey-map.github.io/",
+    source_code_link: "",
+  },
 ];
+
+const personalInfo = {
+  name: "Yücel",
+  fullName: "Yücel Gümüş",
+  email: "yucelgumus61@yahoo.com",
+  role: "Software Developer",
+  about: `Düzce Üniversitesi Bilgisayar Mühendisliği bölümünden mezun olduktan sonra,
+   Turkuvaz Medya Grubu ve Interdata (Pavo Group) gibi firmalarda yazılım geliştirme alanında deneyim kazandım.
+    Web ve mobil uygulama geliştirme, API entegrasyonu ve coğrafi bilgi sistemleri (CBS) üzerine çalıştım.
+     Özellikle, ASP.NET Core , React.js ve Javascript gibi teknolojilerde yetkinim. Hobi olarak Python ile kişisel projeler yaparak kendimi geliştirmeye devam ediyorum.`,
+  projectsIntro: `Yazılım geliştirme tutkumla hobi olarak çeşitli projeler geliştirdim ve GitHub'da paylaştım. 
+  Şimdi bu projeleri web sitemde sergiliyorum. Her proje, öğrendiğim yeni teknikleri uygulayarak kendimi geliştirdiğim bir deneyimi temsil ediyor.
+   Projelerimi inceleyerek ilham alabilir ve GitHub'daki detaylarına göz atabilirsiniz.`,
+};
 
 const socials = [
   {
     id: "github",
     icon: <GithubIcon />,
-    link: "https://github.com/Shivam-Sharma-1",
+    link: "https://github.com/yucel-gumus",
   },
   {
     id: "linkedin",
     icon: <LinkedInIcon />,
-    link: "https://www.linkedin.com/in/shivamsharma77607",
+    link: "https://www.linkedin.com/in/yucel-gumus-81718b1b7/",
   },
 ];
 
-const heroTexts = [
-  "React/Next.js developer",
-  500,
-  "Freelancer",
-  500,
-  "Full-Stack developer",
-  500,
-  "Frontend developer",
-  500,
-  "Backend developer",
-  500,
-  "Tech Team Lead at GDSC MVJCE",
-  500,
-];
+
 
 export {
   navLinks,
@@ -257,5 +494,5 @@ export {
   testimonials,
   projects,
   socials,
-  heroTexts,
+  personalInfo,
 };

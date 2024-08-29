@@ -37,7 +37,7 @@ function Computers({ isMobile }) {
         nodes={nodes}
         materials={materials}
         scale={isMobile ? 0.45 : 0.35}
-        position={isMobile ? [-0.75, -0.7, 0] : [-0.5, -0.5, 0]}
+        position={isMobile ? [-0.75, -0.7, 0] : [-0.6, -0.1, 1]}
         rotation={[-0.01, 1.6, -0.1]}
       />
     </>

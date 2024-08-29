@@ -35,26 +35,18 @@ function Tech() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        {technology.map((tech, index) => (
-          <Link
-            href={tech.link}
-            key={tech.name}
-            target="_blank"
-            className="flex flex-row"
-          >
-            <div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer">
+        {technology.map((tech, techIndex) => (        
+            <div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer" key={tech.name}>
               <Image
                 src={tech.icon}
                 alt={tech.name}
                 fill={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
               />
-
               <div className="opacity-0 w-fit min-w-[80px] bg-bgPrimaryLight dark:bg-bgPrimaryDark text-ctnPrimaryLight dark:text-ctnPrimaryDark text-center text-xs rounded-lg py-2 absolute z-10 group-hover:opacity-100 px-3 -top-3/4 -left-1/3 pointer-events-none">
                 {tech.name}
               </div>
             </div>
-          </Link>
         ))}
       </motion.div>
     </div>
@@ -75,8 +67,9 @@ function Tech() {
         viewport={{ once: true, amount: 0.25 }}
         className="text-center mx-auto"
       >
-        <p className={"sectionSubText"}>What I have learnt so far</p>
-        <h2 className={"sectionHeadText"}>Skills.</h2>
+        <br></br>
+        <br></br>
+        <h2 className={"sectionHeadText"}>Yeteneklerim</h2>
       </motion.div>
 
       <motion.div
@@ -84,7 +77,7 @@ function Tech() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="mt-4 dark:text-ctnSecondaryDark text-ctnSecondaryLight dark:bg-bgSecondaryDark bg-bgSecondaryLight text-[17px] md:w-fit md:min-w-[60%] w-full h-full leading-[30px] flex md:flex-row flex-col gap-4 p-8 md:px-16 mx-auto rounded-lg justify-between backdrop-filter backdrop-blur-xl bg-opacity-10 shadow-sm shadow-primary"
+        className="mt-4 dark:text-ctnSecondaryDark text-ctnSecondaryLight dark:bg-bgSpecialDark bg-bgSecondaryLight text-[17px] md:w-fit md:min-w-[60%] w-full h-full leading-[30px] flex md:flex-row flex-col gap-4 p-8 md:px-16 mx-auto rounded-lg justify-between backdrop-filter backdrop-blur-xl bg-opacity-10 shadow-sm shadow-primary"
       >
         <motion.div
           variants={textVariant()}

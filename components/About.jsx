@@ -17,6 +17,8 @@ function About() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
+       <br></br>
+       <br></br>
         <h2 className={"sectionHeadText text-white"}>Ön Yazı</h2>
       </motion.div>
       <motion.div

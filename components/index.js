@@ -4,6 +4,7 @@ import About from "./About";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
+import HireMe from "./HireMe"
 
 export {
 	Hero,
@@ -12,4 +13,5 @@ export {
 	Tech,
 	Experience,
 	Works,
+	HireMe
 };

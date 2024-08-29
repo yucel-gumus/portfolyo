@@ -84,7 +84,7 @@ function Navbar() {
 								key={nav.id}
 								className={`dark:text-ctnPrimaryDark text-ctnPrimaryLight border-secondary transition-all duration-200 ease-in text-[18px] font-medium cursor-pointer ${
 									active === nav.title
-										? "text-quaternary dark:text-quaternary border-b-2 border-quaternary"
+										? "text-five dark:text-five border-b-2 border-five"
 										: "hover:text-tertiary hover:dark:text-tertiary hover:border-y-2"
 								}`}
 								onClick={() => setActive(nav.title)}

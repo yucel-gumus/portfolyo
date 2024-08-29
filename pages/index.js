@@ -7,6 +7,7 @@ import {
   Navbar,
   Tech,
   Works,
+  HireMe
 } from "@/components";
 import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
@@ -46,6 +47,7 @@ function App({ loading }) {
       <Experience />
       <Tech />
       <Works />
+      <HireMe/>
       <button
         onClick={() => {
           window.scrollTo({

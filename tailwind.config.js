@@ -18,7 +18,7 @@ module.exports = {
 
         ctnPrimaryLight: "#2e384d",
         ctnSecondaryLight: "#4b42a7",
-
+        ctnSpecialDark:"#8B0000",
         ctnPrimaryDark: "#e5e6e9",
         ctnSecondaryDark: "#7e8c9f",
       },
@@ -30,6 +30,8 @@ module.exports = {
           "linear-gradient(90deg, rgba(70, 130, 180, 1) 0%, rgba(100, 149, 237, 1) 50%, rgba(70, 130, 180, 1) 100%)",
         bgSecondaryDark:
           "linear-gradient(90deg, rgba(33,33,52,1) 0%, rgba(39,39,61,1) 50%, rgba(33,33,52,1) 100%)",
+          bgSpecialDark:
+          "linear-gradient(90deg, rgba(53,43,52,1) 0%, rgba(79,39,61,1) 50%, rgba(63,33,52,1) 100%)",
         bgPrimaryLight:
           "linear-gradient(90deg, rgba(211,207,212,1) 0%, rgba(231,239,244,1) 50%, rgba(211,207,212,1) 100%)",
         bgSecondaryLight:
