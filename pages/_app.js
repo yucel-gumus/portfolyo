@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
 	const description =
 		"Merhaba ben Yücel Gümüş. Kişisel Portfolyo web siteme hoşgeldiniz";
 	const avatar =
-		"";
+		"https://avatars.githubusercontent.com/u/117937365?s=48&v=4";
 	const url = "";
 
 	return (

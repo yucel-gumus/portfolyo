@@ -27,14 +27,22 @@ function About() {
         className="mt-4 dark:text-ctnPrimaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-        Düzce Üniversitesi Bilgisayar Mühendisliği bölümünden mezun olduktan sonra,
-   Turkuvaz Medya Grubu ve Interdata (Pavo Group) gibi firmalarda yazılım geliştirme alanında deneyim kazandım.
-    Web ve mobil uygulama geliştirme, API entegrasyonu ve coğrafi bilgi sistemleri (CBS) üzerine çalıştım.
-     Özellikle, ASP.NET Core , React.js ve Javascript gibi teknolojilerde yetkinim. Hobi olarak Python ile kişisel projeler yaparak kendimi geliştirmeye devam ediyorum.`,
-  projectsIntro: `Yazılım geliştirme tutkumla hobi olarak çeşitli projeler geliştirdim ve GitHub'da paylaştım. 
-  Şimdi bu projeleri web sitemde sergiliyorum. Her proje, öğrendiğim yeni teknikleri uygulayarak kendimi geliştirdiğim bir deneyimi temsil ediyor.
-   Projelerimi inceleyerek ilham alabilir ve GitHub'daki detaylarına göz atabilirsiniz.
+          Düzce Üniversitesi Bilgisayar Mühendisliği bölümünden mezun olduktan
+          sonra, Turkuvaz Medya Grubu ve Interdata (Pavo Group) gibi firmalarda
+          yazılım geliştirme alanında deneyim kazandım. Web ve mobil uygulama
+          geliştirme, API entegrasyonu ve coğrafi bilgi sistemleri (CBS) üzerine
+          çalıştım. Özellikle, ASP.NET Core , React.js ve Javascript gibi
+          teknolojilerde yetkinim. Hobi olarak Python ile kişisel projeler
+          yaparak kendimi geliştirmeye devam ediyorum.
+          <br />
+          Yazılım geliştirme tutkumla hobi olarak çeşitli projeler geliştirdim
+          ve GitHub&apos;da paylaştım. Şimdi bu projeleri web sitemde
+          sergiliyorum. Her proje, öğrendiğim yeni teknikleri uygulayarak
+          kendimi geliştirdiğim bir deneyimi temsil ediyor. Projelerimi
+          inceleyerek ilham alabilir ve GitHub&apos;daki detaylarına göz
+          atabilirsiniz.
         </div>
+
         <div className="w-fit break-words">
           <Link
             href="yucelgumus61@yahoo.com"
