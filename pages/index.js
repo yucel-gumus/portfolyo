@@ -7,7 +7,8 @@ import {
   Navbar,
   Tech,
   Works,
-  HireMe
+  HireMe,
+  Certificates
 } from "@/components";
 import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
@@ -46,6 +47,7 @@ function App({ loading }) {
       <Services />
       <Experience />
       <Tech />
+      <Certificates/>
       <Works />
       <HireMe/>
       <button

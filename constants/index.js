@@ -7,7 +7,6 @@ import JavaScriptIcon from "./../public/assets/icons/javascript.svg";
 import NetCoreIcon from "./../public/assets/icons/nextjs.svg";
 import PythonIcon from "./../public/assets/icons/django.svg";
 
-
 const navLinks = [
   {
     id: "about",
@@ -20,6 +19,10 @@ const navLinks = [
   {
     id: "skills",
     title: "Yeteneklerim",
+  },
+  {
+    id: "certificate",
+    title: "Sertifikalarım",
   },
   {
     id: "projects",
@@ -38,19 +41,19 @@ const services = [
   },
   {
     title: "NodeJs Developer",
-    icon: <NodeJsIcon/>,
+    icon: <NodeJsIcon />,
   },
   {
     title: "Javascript Developer",
-    icon: <JavaScriptIcon/>,
+    icon: <JavaScriptIcon />,
   },
   {
     title: "ASP.NET Core Developer",
-    icon: <NetCoreIcon/>
+    icon: <NetCoreIcon />,
   },
   {
     title: "Python Developer",
-    icon: <PythonIcon/>,
+    icon: <PythonIcon />,
   },
 ];
 
@@ -177,7 +180,6 @@ const technologies = {
   ],
 };
 
-
 const experiences = [
   {
     title: "Yazılım Geliştirme Uzman Yardımcısı",
@@ -189,7 +191,7 @@ const experiences = [
     points: [
       "Şirket bünyesinde bulunan markaların (ATV, Aspor, Ahaber, Takvim, Fotomaç, Sabah vs.) web sitelerini geliştirme ve optimize etme",
       "Turkuvaz Akademi uygulamasının tasarlanması ve geliştirilmesi (CRUD işlemleri,döküman ve video yükleme, sınav oluşturma ve sınava girme işlemlerinde etkin rol aldım)",
-      "Turkuvapp mobil ve web uygulamasının geliştirilmesi ve kullanıcı bazlı dönüşlerde iyileştirilme"
+      "Turkuvapp mobil ve web uygulamasının geliştirilmesi ve kullanıcı bazlı dönüşlerde iyileştirilme",
     ],
   },
   {
@@ -200,9 +202,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Ağustos 2022 - Nisan 2023",
     points: [
-        "Araç Takip Sistemi projesinde gerçek zamanlı konum takibi, sensör veri işleme ve raporlama,CRUD işlemleri aşamalarında etkin rol aldım.", 
-        "Şirket bünyesinde bulunan tüm firmalarda kullanılmak üzere proje test ve takip web uygulamasının CRUD işlemleri,raporlama ve izleme aşamalarını gerçekleştirdim",
-        "Kapsamlı bir test otomasyon projesi geliştirerek, hata tespit süresini %40 azalttım ve yazılım kalitesini artırdım"
+      "Araç Takip Sistemi projesinde gerçek zamanlı konum takibi, sensör veri işleme ve raporlama,CRUD işlemleri aşamalarında etkin rol aldım.",
+      "Şirket bünyesinde bulunan tüm firmalarda kullanılmak üzere proje test ve takip web uygulamasının CRUD işlemleri,raporlama ve izleme aşamalarını gerçekleştirdim",
+      "Kapsamlı bir test otomasyon projesi geliştirerek, hata tespit süresini %40 azalttım ve yazılım kalitesini artırdım",
     ],
   },
   {
@@ -220,30 +222,38 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const certificates = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    description:
+      "Python ,Docker,FastApi  uyguladığım bir eğitim projesi tamamladım",
+    name: "Full Python Project",
+    company: "Superpeer",
+    image: "/assets/certificates/pythın.png",
+    url: "https://superpeer.com/certificate/cobanov/j8u1qLJDpmW5UjR5P2eF",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    description:
+      "Python , Tensorflow eğitimleri aldım ve bu bilgileri Veri Bilimi projesi için kullandım  ",
+    name: "Veri Bilimi için Python ve Tensorflow",
+    company: "BTK",
+    image: "/assets/certificates/btk.png",
+    url: "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=lK1h7MYDBl",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    description:
+      "Python , Cifar10 veri seti kullanarak görüntü analizi yapan yapay zeka modeli eğitimi aldım ",
+    name: "Yapay Zekaya Giriş",
+    company: "Global AI Hub Aygaz",
+    image: "/assets/certificates/ai.png",
+    url: "https://courses.10million.ai/saas-certificate/12CEAAEBB-12CEAAF18-2F44F70/",
+  },
+  {
+    description:
+      "Python , Google Colab ile dataset üzerinden veri analizi yaparak eğitimi tamamladım ",
+    name: "veri Analizi",
+    company: "Global AI Hub Akabnk",
+    image: "/assets/certificates/data.png",
+    url: "https://courses.10million.ai/saas-certificate/12CE9C719-12CE9C776-2F44F70/",
   },
 ];
 
@@ -268,7 +278,7 @@ const projects = [
     ],
     image: "/assets/projects/cahtbot.png",
     deployed_link: "https://huggingface.co/spaces/yucelgumus61/ChatBotPro",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/ChatBotPro",
   },
 
   {
@@ -290,7 +300,7 @@ const projects = [
       },
     ],
     image: "/assets/projects/rickandmorty.png",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/RickAndMorty_MultiSelect",
     deployed_link: "https://yucel-gumus.github.io/RickAndMorty_MultiSelect/",
   },
   {
@@ -312,7 +322,7 @@ const projects = [
       },
     ],
     image: "/assets/projects/cesiumdrone.png",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/cesium-drone.github.io",
     deployed_link: "https://yucel-gumus.github.io/cesium-drone.github.io/",
   },
   {
@@ -335,7 +345,7 @@ const projects = [
       { name: "Netlify", color: "blue-text-gradiet" },
     ],
     image: "/assets/projects/gemini.png",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/gemini-chat-react",
     deployed_link: "https://gemini-chat-image.netlify.app/",
   },
   {
@@ -358,7 +368,7 @@ const projects = [
       { name: "python", color: "blue-text-gradiet" },
     ],
     image: "/assets/projects/Flask.png",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/gemini-1.5-flash_Flask",
     deployed_link: "https://yucelgumus.pythonanywhere.com/",
   },
   {
@@ -381,7 +391,7 @@ const projects = [
       { name: "embedding", color: "blue-text-gradiet" },
     ],
     image: "/assets/projects/imageclassifier.png",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/image_classifier_gradio",
     deployed_link:
       "https://huggingface.co/spaces/yucelgumus61/image_classifier",
   },
@@ -405,7 +415,7 @@ const projects = [
       { name: "cosine_similarity", color: "blue-text-gradiet" },
     ],
     image: "/assets/projects/nltk.png",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/NLTK",
     deployed_link: "https://huggingface.co/spaces/yucelgumus61/NTLK",
   },
   {
@@ -428,7 +438,7 @@ const projects = [
       { name: "CV2", color: "blue-text-gradiet" },
     ],
     image: "/assets/projects/depth.png",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/Depth_Estimation_Gradio",
     deployed_link:
       "https://huggingface.co/spaces/yucelgumus61/Zoe_DeptAnalyzer",
   },
@@ -453,7 +463,7 @@ const projects = [
     ],
     image: "/assets/projects/turkeymap.png",
     deployed_link: "https://yucel-gumus.github.io/turkey-map.github.io/",
-    source_code_link: "",
+    source_code_link: "https://github.com/yucel-gumus/turkey-map.github.io",
   },
 ];
 
@@ -484,14 +494,12 @@ const socials = [
   },
 ];
 
-
-
 export {
   navLinks,
   services,
   technologies,
   experiences,
-  testimonials,
+  certificates,
   projects,
   socials,
   personalInfo,
