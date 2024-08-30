@@ -29,16 +29,16 @@ function Computers({ isMobile }) {
         enableDamping={true}
         dampingFactor={0.05}
         enablePan={false}
-        autoRotateSpeed={4}
+        autoRotateSpeed={2}
         autoRotate={isMobile && true}
         makeDefault
       />
       <ComputerModel
         nodes={nodes}
         materials={materials}
-        scale={isMobile ? 0.45 : 0.35}
-        position={isMobile ? [-0.75, -0.7, 0] : [-0.6, -0.1, 1]}
-        rotation={[-0.01, 1.6, -0.1]}
+        scale={isMobile ? 0.40 : 0.35}
+        position={isMobile ? [-0.9, -0.5, 0] : [-0.6, 0.3, 1]}
+        rotation={[-0.3, 1.9, -0.2]}
       />
     </>
   );
