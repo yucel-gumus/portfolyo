@@ -280,6 +280,72 @@ const projects = [
     deployed_link: "https://huggingface.co/spaces/yucelgumus61/ChatBotPro",
     source_code_link: "https://github.com/yucel-gumus/ChatBotPro",
   },
+  {
+    name: "Langchain PDF soru-cevap",
+    description:
+      "Bu uygulamam da langchain ve gemini-1.5-pro kullanarak kullanıcının yüklediği pdf dosyasına ilişkin sorular sorarak cevaplar alabilmesini sağladım. Uygulamamı hugging face space üzerinden canlı olarak yayımladım. ",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "langchain",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gemini",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/langchain.png",
+    source_code_link: "",
+    deployed_link: "https://huggingface.co/spaces/yucelgumus61/LangChain_PDF",
+  },
+
+  {
+    name: "Resim Arkaplanı Kaldırma",
+    description: "Bu uygulamam da kullanıcının yüklediği resmin arkaplanını silmek için ZhengPeng7/BiRefNet modelini  pytorch ve transformers kütüphanesini kullandım.Kullanıcı isteğe bağlı hem local bilgisayarından hem de url üzerinden resim upload edebilir. ",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pytorch",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gradio",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/removeback.png",
+    source_code_link: "",
+    deployed_link: "https://huggingface.co/spaces/yucelgumus61/Image_Background_Remove",
+  },
+  {
+    name: "Müzik Ayrıştırma",
+    description: "Bu uygulamam da kullanıcının yüklediği müzik dosyasını şarkıcı sesi ve çalgı aletlerinin sesini ayırmasını sağlıyor.Pytorch ve separator modeli kullanarak yapılan bu uygulama hugging face space üzerinde yayımlanmıştır. ",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pytorch",
+        color: "green-text-gradient",
+      },
+      {
+        name: "separator",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/music.png",
+    source_code_link: "",
+    deployed_link: "https://huggingface.co/spaces/yucelgumus61/Music_Vokal_Separate",
+  },
+
 
   {
     name: "MultiSelect Component",
@@ -416,7 +482,7 @@ const projects = [
     ],
     image: "/assets/projects/nltk.png",
     source_code_link: "https://github.com/yucel-gumus/NLTK",
-    deployed_link: "https://huggingface.co/spaces/yucelgumus61/NTLK",
+    deployed_link: "https://huggingface.co/spaces/yucelgumus61/NLTK",
   },
   {
     name: "Resim Derinlik Analizi",
