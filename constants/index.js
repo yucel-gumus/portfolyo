@@ -255,6 +255,22 @@ const certificates = [
     image: "/assets/certificates/data.png",
     url: "https://courses.10million.ai/saas-certificate/12CE9C719-12CE9C776-2F44F70/",
   },
+  {
+    description:
+      "Python ile doğal dil işleme eğitimi tamamladım ",
+    name: "Doğal Dil İşleme",
+    company: "BTK Akademi",
+    image: "/assets/certificates/nlp.png",
+    url: "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=pKmhKmwBzk",
+  },
+  {
+    description:
+      "ChatGPT üzerinden fine tune ile kişiselleştirilmiş gpt modeli eğitimini tamamladım ",
+    name: "Kişiselleştirilmiş GPT Modeli",
+    company: "BTK Akademi",
+    image: "/assets/certificates/gpt.png",
+    url: "https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=6mqFNaZOWp",
+  },
 ];
 
 const projects = [
