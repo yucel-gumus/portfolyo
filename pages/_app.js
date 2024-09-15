@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import "@/styles/globals.css";
 
@@ -52,6 +53,7 @@ export default function App({ Component, pageProps }) {
 
 			<ThemeProvider attribute="class" defaultTheme="dark">
 				<Component {...pageProps} loading={loading} />
+				<SpeedInsights />
 				<Analytics mode={'production'} />;
 				{loading && <PreLoader />}
 			</ThemeProvider>
