@@ -69,7 +69,7 @@ function About() {
           ))}
         </div>
         <Link
-          href="document/Yucel_Gumus_CV.pdf"
+          href="document/Yucel_GUMUS_CV.pdf"
           target="_blank"
           rel="noreferrer"
           className="w-fit"
