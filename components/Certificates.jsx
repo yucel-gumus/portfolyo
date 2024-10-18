@@ -3,6 +3,7 @@ import React, { memo } from 'react';
 import { certificates } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from "../utils/motion";
+import Image from 'next/image';
 
 // Sertifika Kartı Bileşeni (Memoized to avoid re-renders)
 const Card = memo(({ index, name, image, url, description, company }) => {
@@ -12,10 +13,12 @@ const Card = memo(({ index, name, image, url, description, company }) => {
       className="bg-white p-5 rounded-xl shadow-md w-full hover:scale-105 transition-transform duration-300"
     >
       {/* Sertifika Görseli */}
-      <img 
+      <Image 
         src={image} 
-        className="object-cover h-[150px] w-full rounded-lg mb-4" 
         alt={`Certificate for ${name}`} 
+        className="object-cover h-[150px] w-full rounded-lg mb-4"
+        width={500} // Set a proper width for optimization
+        height={150} // Set a proper height for optimization
         loading="lazy"
       />
 
@@ -50,6 +53,9 @@ const Card = memo(({ index, name, image, url, description, company }) => {
     </motion.div>
   );
 });
+
+// Define display name for the memoized component
+Card.displayName = 'Card';
 
 // Ana Sertifikalar Bileşeni
 const Certificates = () => {
