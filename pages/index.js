@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import {
   About,
@@ -8,7 +9,7 @@ import {
   Tech,
   Works,
   HireMe,
-  Certificates
+  Certificates,
 } from "@/components";
 import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
@@ -38,6 +39,7 @@ function App({ loading }) {
   return (
     <main className="relative z-0 w-full h-full">
       <div className=" bg-cover bg-no-repeat bg-center">
+        <SpeedInsights />
         <Navbar />
         <Hero loading={loading} isMobile={isMobile} />
       </div>

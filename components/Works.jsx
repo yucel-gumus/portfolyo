@@ -11,6 +11,7 @@ import RocketLogo from "./../public/assets/icons/rocket.svg";
 
 const PROJECTS_PER_PAGE = 3;
 const ANIMATION_DURATION = 0.3;
+const CHAR_LIMIT = 380;
 
 const projectVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -32,16 +33,7 @@ const projectVariants = {
   }
 };
 
-const ProjectCard = React.memo(function ProjectCard({
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  deployed_link,
-}) {
-  const CHAR_LIMIT = 380;
-
+function ProjectCard({ name, description, tags, image, source_code_link, deployed_link }) {
   return (
     <Tilt
       tiltMaxAngleX={10}
@@ -99,7 +91,7 @@ const ProjectCard = React.memo(function ProjectCard({
       </div>
     </Tilt>
   );
-});
+}
 
 function Works() {
   const [visibleProjects, setVisibleProjects] = useState(PROJECTS_PER_PAGE);

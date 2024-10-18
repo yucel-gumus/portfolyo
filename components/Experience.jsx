@@ -39,13 +39,18 @@ function ExperienceCard({ experience, theme }) {
               src={experience.icon}
               alt={experience.company_name}
               fill={true}
+              priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
             />
           </div>
         </div>
       }
     >
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
         <h3 className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[24px] font-bold">
           {experience.title}
         </h3>
@@ -55,16 +60,18 @@ function ExperienceCard({ experience, theme }) {
         >
           {experience.company_name}
         </p>
-      </div>
+      </motion.div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
-          <li
+          <motion.li
             key={`experience-point-${index}`}
             className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[14px] pl-1 tracking-wider"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
           >
             {point}
-          </li>
+          </motion.li>
         ))}
       </ul>
     </VerticalTimelineElement>

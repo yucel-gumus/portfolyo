@@ -6,7 +6,7 @@ function ServiceCard({ index, title, icon }) {
   return (
     <Tilt className="w-[250px]" tiltMaxAngleX="10" tiltMaxAngleY="10">
       <motion.div
-        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        variants={fadeIn("right", "spring", index * 0.2, 0.6)} // Hızlandırılmış animasyon
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}

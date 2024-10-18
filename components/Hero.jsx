@@ -16,23 +16,30 @@ function Hero({ loading, isMobile }) {
         </p>
       </div>
 
+      {/* 3D Animasyonlu Canvas */}
       <motion.div
         variants={fadeIn("up", "spring")}
         initial="hidden"
         whileInView={!loading && "show"}
         viewport={{ once: true, amount: 0.25 }}
         className="w-full md:h-[800px] sm:h-[300px] h-[200px] absolute md:top-[170px] sm:top-[280px] top-[350px]"
+        transition={{ duration: 0.75, ease: "easeInOut" }} // Animasyon hızını arttırdık
       >
         <ComputersCanvas isMobile={isMobile} />
       </motion.div>
+
+      {/* Scroll Down Indicator */}
       <div className="absolute xs:bottom-2 bottom-12 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[45px] rounded-full border-8 border-secondary flex justify-center items-start animate-bounce">
             <Image
               src="/assets/scroll-down.svg"
-              alt="Mail Yolla"
+              alt="Scroll Down"
               width={35}
               height={45}
+              priority
+              loading="eager"
+              sizes="(max-width: 768px) 50px, (max-width: 1200px) 35px, 35px"
             />
           </div>
         </a>
