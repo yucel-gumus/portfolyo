@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FaEye, FaDownload } from "react-icons/fa"; // İkonları import ediyoruz
 
 import { socials } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -70,26 +71,35 @@ function About() {
           ))}
         </div>
 
-        <Link
-          href="document/Yucel_GUMUS_CV.pdf"
-          target="_blank"
-          rel="noreferrer"
-          className="w-fit mt-4"
-        >
-          <div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
-            <div className="original bg-primary text-white px-7 py-2">
-              Resume
-            </div>
-            <div className="letters">
-              <span>R</span>
-              <span>e</span>
-              <span>s</span>
-              <span>u</span>
-              <span>m</span>
-              <span>e</span>
-            </div>
-          </div>
-        </Link>
+        {/* Yeni CV Görüntüleme ve İndirme Butonları */}
+        <div className="flex gap-4 w-fit mt-4">
+          {/* CV'yi Görüntüle Butonu */}
+          <a
+            href="/document/Yucel_GUMUS_CV.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-view bg-quaternary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer flex items-center justify-center transition-transform transform hover:-translate-y-2 ease-in duration-100"
+            aria-label="CV&apos;yi Görüntüle"
+          >
+            <FaEye className="w-5 h-5 mr-2" />
+            <span className="original bg-secondary text-white rounded-md px-2 py-1">
+              CV&apos;yi Görüntüle
+            </span>
+          </a>
+
+          {/* CV'yi İndir Butonu */}
+          <a
+            href="/document/Yucel_GUMUS_CV.pdf"
+            download="Yucel_GUMUS_CV.pdf"
+            className="btn-download bg-quaternary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer flex items-center justify-center transition-transform transform hover:-translate-y-2 ease-in duration-100"
+            aria-label="CV&apos;yi İndir"
+          >
+            <FaDownload className="w-5 h-5 mr-2" />
+            <span className="original bg-secondary text-white  rounded-md px-2 py-1">
+              CV&apos;yi İndir
+            </span>
+          </a>
+        </div>
       </motion.div>
     </section>
   );

@@ -12,12 +12,10 @@ function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [avatarToggle, setAvatarToggle] = useState(false);
 
-  // Avatar modal açıldığında body overflow'yu kontrol et
   useEffect(() => {
     document.body.style.overflowY = avatarToggle ? "hidden" : "auto";
   }, [avatarToggle]);
 
-  // Avatar Modal
   const AvatarModal = () => (
     <aside className="w-[100vw] h-[100vh] flex justify-center items-center bg-[#0000007a] fixed top-0 left-0">
       <div className="sm:w-[500px] sm:h-[500px] xs:w-[400px] xs:h-[400px] w-[200px] h-[200px] dark:bg-[#2b2b42d2] bg-[#e0eaf0] flex justify-center items-center backdrop-blur-sm backdrop-filter bg-opacity-80 rounded-md modal">

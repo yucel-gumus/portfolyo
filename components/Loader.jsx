@@ -32,7 +32,7 @@ export function PreLoader() {
         if (i >= 100) {
           clearInterval(interval);
         }
-      }, 25); // Daha hızlı ilerleme
+      }, 25);
     };
 
     updateProgress();
