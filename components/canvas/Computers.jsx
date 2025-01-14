@@ -78,15 +78,15 @@ Computers.displayName = "Computers";
 function ComputersCanvas({ isMobile }) {
   return (
     <Canvas
-      dpr={[1, 1.5]} 
+      dpr={[1, 1.5]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{
         outputColorSpace: THREE.SRGBColorSpace,
         alpha: true,
-        antialias: false, 
+        antialias: false,
       }}
       className="cursor-pointer"
-      performance={{ min: 0.5, max: 1, debounce: { scroll: 50, resize: 50 } }} 
+      performance={{ min: 0.5, max: 1, debounce: { scroll: 50, resize: 50 } }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <Computers isMobile={isMobile} />
